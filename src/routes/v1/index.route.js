@@ -23,7 +23,7 @@ import SupervisoresRoutes from "./supervisores.routes.js";
 import cdpRoutes from './cdp.routes.js';
 import centroUsuarioRoutes from './centroUsuario.routes.js';
 import supervisoresRoutes from './supervisores.routes.js';
-import ObligacionesRoutes from './obligaciones.routes.js';
+import ObligacionesRoutes from './Obligaciones.routes.js';
 import contratosRoutes from './contratos.routes.js';
 
 import necesidadContratacionRoutes from './necesidad_contratacion.routes.js';
@@ -89,6 +89,6 @@ router.use("/clasificacion-persona-natural", clasificacion_persona_naturalRoutes
 router.use("/educacion-informales", EducacionInformalRoutes);
 router.use("/experiencias-laborales", ExperienciaLaboralroutes);
 router.use("/titulo-formacion", tipo_formacionRoutes)
-router.use("/registros-presupuestales", RegistrosPresupuestalesRoutes )
+router.use("/registros-presupuestales", RegistrosPresupuestalesRoutes)
 
 export default router;
