@@ -1,0 +1,1189 @@
+[2025-07-10T18:55:09.084Z] Error 400: Expected ',' or '}' after property value in JSON at position 41
+{
+  "stack": "SyntaxError: Expected ',' or '}' after property value in JSON at position 41\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)",
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-10T18:55:16.616Z] Error 400: Expected ',' or '}' after property value in JSON at position 41
+{
+  "stack": "SyntaxError: Expected ',' or '}' after property value in JSON at position 41\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)",
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-10T18:55:39.929Z] Error 400: Expected ',' or '}' after property value in JSON at position 41
+{
+  "stack": "SyntaxError: Expected ',' or '}' after property value in JSON at position 41\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)",
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-11T20:11:02.687Z] Error 400: Unexpected token ',', ..."elefono": ,
+  "centr"... is not valid JSON
+{
+  "stack": "SyntaxError: Unexpected token ',', ...\"elefono\": ,\n  \"centr\"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+  "url": "/api/v1/coordinadores",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-11T20:15:43.418Z] Error 400: Expected double-quoted property name in JSON at position 145 (line 9 column 1)
+{
+  "stack": "SyntaxError: Expected double-quoted property name in JSON at position 145 (line 9 column 1)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+  "url": "/api/v1/coordinadores",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-11T20:16:16.631Z] Error 400: Unterminated fractional number in JSON at position 160 (line 8 column 19)
+{
+  "stack": "SyntaxError: Unterminated fractional number in JSON at position 160 (line 8 column 19)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+  "url": "/api/v1/coordinadores",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-16T13:32:59.367Z] Error 400: Expected ',' or '}' after property value in JSON at position 23 (line 3 column 3)
+{
+  "stack": "SyntaxError: Expected ',' or '}' after property value in JSON at position 23 (line 3 column 3)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-16T13:33:03.107Z] Error 400: Expected ',' or '}' after property value in JSON at position 23 (line 3 column 3)
+{
+  "stack": "SyntaxError: Expected ',' or '}' after property value in JSON at position 23 (line 3 column 3)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+  "url": "/api/v1/auth/login",
+  "method": "GET",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-17T15:40:54.431Z] Error 400: Expected ',' or '}' after property value in JSON at position 53 (line 4 column 3)
+{
+  "stack": "SyntaxError: Expected ',' or '}' after property value in JSON at position 53 (line 4 column 3)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\Backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\Backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\Backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\Backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\Backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+  "url": "/api/v1/coordinadores",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-17T16:54:47.375Z] Error 400: Expected double-quoted property name in JSON at position 86 (line 7 column 1)
+{
+  "stack": "SyntaxError: Expected double-quoted property name in JSON at position 86 (line 7 column 1)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+  "url": "/api/v1/supervisores",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-22T18:24:22.953Z] Error 400: Expected double-quoted property name in JSON at position 28 (line 6 column 1)
+{
+  "stack": "SyntaxError: Expected double-quoted property name in JSON at position 28 (line 6 column 1)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+  "url": "/api/v1/codigo_rubros/1",
+  "method": "PUT",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-22T18:24:40.728Z] Error 400: Bad control character in string literal in JSON at position 42 (line 3 column 23)
+{
+  "stack": "SyntaxError: Bad control character in string literal in JSON at position 42 (line 3 column 23)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\SENA\\Documents\\Proyecto.Acia\\ACIA_2025\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+  "url": "/api/v1/codigo_rubros/1",
+  "method": "PUT",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-07-23T18:20:46.486Z] Error 400: Unexpected token ',', "  {
+"nombre": ,
+
+}" is not valid JSON
+{
+  "stack": "SyntaxError: Unexpected token ',', \"  {\n\"nombre\": ,\n\n}\" is not valid JSON\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)",
+  "url": "/api/v1/regionales",
+  "method": "POST",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Thunder Client (https://www.thunderclient.com)"
+}
+
+[2025-09-04 09:47:49] ERROR: Error al extraer texto del PDF
+Error: El texto extraído del PDF es demasiado corto. El archivo podría estar protegido, ser una imagen, o estar corrupto.
+    at GeminiService.extractTextFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:92:15)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:203:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:17:20)
+[2025-09-09 15:25:48] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API key expired. Please renew the API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key expired. Please renew the API key."}]
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-09 15:25:48] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API key expired. Please renew the API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key expired. Please renew the API key."}]
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-09 15:27:28] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API key expired. Please renew the API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key expired. Please renew the API key."}]
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-09 15:27:28] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API key expired. Please renew the API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key expired. Please renew the API key."}]
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-09 15:29:15] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API key expired. Please renew the API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key expired. Please renew the API key."}]
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-09 15:29:15] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API key expired. Please renew the API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key expired. Please renew the API key."}]
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-09 15:30:37] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API Key not found. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API Key not found. Please pass a valid API key."}]
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-09 15:30:37] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API Key not found. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API Key not found. Please pass a valid API key."}]
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-09 15:33:54] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API Key not found. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API Key not found. Please pass a valid API key."}]
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-09 15:33:54] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API Key not found. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API Key not found. Please pass a valid API key."}]
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-16T14:15:45.246Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'Contrato.informacion_personal_id' in 'on clause'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.rawSelect (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:434:18)\n    at async Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1277:19)\n    at async Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:20)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T14:15:45.293Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'Contrato.informacion_personal_id' in 'on clause'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.rawSelect (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:434:18)\n    at async Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1277:19)\n    at async Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:20)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T14:20:55.098Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'Contrato.informacion_personal_id' in 'on clause'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.rawSelect (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:434:18)\n    at async Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1277:19)\n    at async Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:20)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T14:20:55.134Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'Contrato.informacion_personal_id' in 'field list'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.select (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:407:12)\n    at async Contrato.findAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1140:21)\n    at async Promise.all (index 1)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)\n    at async getContratos (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:17:9)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T14:24:52.512Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'Contrato.informacion_personal_id' in 'on clause'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.rawSelect (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:434:18)\n    at async Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1277:19)\n    at async Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:20)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T14:24:52.555Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'Contrato.centro_id' in 'field list'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.select (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:407:12)\n    at async Contrato.findAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1140:21)\n    at async Promise.all (index 1)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)\n    at async getContratos (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:17:9)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T14:51:12.717Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'obligacion->autorizaciones->autorizacion_obligacion.createdAt' in 'field list'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.select (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:407:12)\n    at async Contrato.findAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1140:21)\n    at async Promise.all (index 1)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)\n    at async getContratos (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:17:9)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T14:51:12.776Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'obligacion->autorizaciones->autorizacion_obligacion.createdAt' in 'field list'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.select (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:407:12)\n    at async Contrato.findAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1140:21)\n    at async Promise.all (index 1)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)\n    at async getContratos (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:17:9)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:21:15.026Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:21:15.065Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:21:27.494Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:21:27.526Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:21:41.034Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:21:41.087Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:29:52.517Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:29:52.587Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:33:42.364Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:33:42.404Z] Error en getContratosRepository
+{
+  "message": "Obligacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Obligacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:41:59.220Z] Error en getContratosRepository
+{
+  "message": "Autorizacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Autorizacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:41:59.264Z] Error en getContratosRepository
+{
+  "message": "Autorizacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Autorizacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:42:10.280Z] Error en getContratosRepository
+{
+  "message": "Autorizacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Autorizacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-16T18:42:10.294Z] Error en getContratosRepository
+{
+  "message": "Autorizacion is not associated to Contrato!",
+  "stack": "SequelizeEagerLoadingError: Autorizacion is not associated to Contrato!\n    at Contrato._getIncludedAssociation (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:565:13)\n    at Contrato._validateIncludedElement (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:502:53)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:421:37\n    at Array.map (<anonymous>)\n    at Contrato._validateIncludedElements (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:417:39)\n    at Contrato.aggregate (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1252:12)\n    at Contrato.count (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-17 09:19:49] ERROR: Error al extraer información de autorización desde imagen
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractAutorizacionInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:473:22)
+    at async GeminiService.processAutorizacionPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:540:32)
+    at async extractAutorizacionFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/autorizacion/extractionController.js:21:20)
+[2025-09-17 09:19:49] ERROR: Error en processAutorizacionPDF
+Error: Error al extraer información de autorización desde imagen: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at GeminiService.extractAutorizacionInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:488:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processAutorizacionPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:540:32)
+    at async extractAutorizacionFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/autorizacion/extractionController.js:21:20)
+[2025-09-17 11:39:22] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-17 11:39:22] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-17 11:39:36] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-17 11:39:36] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-17 11:39:41] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-17 11:39:41] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-18 08:56:49] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-18 08:56:49] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-18 08:56:57] ERROR: Error al procesar imagen con Gemini
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:183:22)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-18 08:56:57] ERROR: Error en processCDPPDF
+Error: Error al procesar imagen con Gemini: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at GeminiService.extractCDPInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:216:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async GeminiService.processCDPPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:263:23)
+    at async extractCDPFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/cdp/extractionController.js:21:20)
+[2025-09-18 09:29:44] ERROR: Gemini error en extracción de autorización desde imagen, aplicando fallback
+Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.
+    at handleResponseNotOk (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async callWithRetries (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:608:20)
+    at async GeminiService.extractAutorizacionInfoFromImage (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:668:24)
+    at async GeminiService.processAutorizacionPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/geminiService.js:757:32)
+    at async extractAutorizacionFromPDF (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/autorizacion/extractionController.js:33:22)
+[2025-09-18T18:49:25.086Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457457",
+    "fecha_acta_seleccion": "2025-09-19",
+    "valor_mensual": 465657,
+    "fecha_estimada_inicio": "2025-09-19",
+    "fecha_estimada_terminacion": "2025-09-26",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T18:49:25.095Z] Error en storeContratoRepository
+{
+  "message": "Cannot add or update a child row: a foreign key constraint fails (`acia`.`contratos`, CONSTRAINT `contratos_ibfk_3` FOREIGN KEY (`obligacion_id`) REFERENCES `obligaciones` (`id`) ON DELETE CASCADE)",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Contrato.create (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async storeContratoRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:193:22)\n    at async storeContratoService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:63:12)\n    at async storeContrato (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:57:22)",
+  "payload": {
+    "acta_seleccion": "56457457",
+    "fecha_acta_seleccion": "2025-09-19",
+    "valor_mensual": 465657,
+    "fecha_estimada_inicio": "2025-09-19",
+    "fecha_estimada_terminacion": "2025-09-26",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T18:52:32.585Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457457",
+    "fecha_acta_seleccion": "2025-09-19",
+    "valor_mensual": 465657,
+    "fecha_estimada_inicio": "2025-09-19",
+    "fecha_estimada_terminacion": "2025-09-26",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T18:52:32.593Z] Error en storeContratoRepository
+{
+  "message": "Column 'obligacion_id' cannot be null",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Contrato.create (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async storeContratoRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:197:20)\n    at async storeContratoService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:63:12)\n    at async storeContrato (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:57:22)",
+  "payload": {
+    "acta_seleccion": "56457457",
+    "fecha_acta_seleccion": "2025-09-19",
+    "valor_mensual": 465657,
+    "fecha_estimada_inicio": "2025-09-19",
+    "fecha_estimada_terminacion": "2025-09-26",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T19:06:04.969Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 34344,
+    "fecha_estimada_inicio": "2025-09-19",
+    "fecha_estimada_terminacion": "2025-09-20",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 4,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T19:06:04.972Z] Error en storeContratoRepository
+{
+  "message": "Column 'obligacion_id' cannot be null",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Contrato.create (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async storeContratoRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:197:20)\n    at async storeContratoService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:63:12)\n    at async storeContrato (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:57:22)",
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 34344,
+    "fecha_estimada_inicio": "2025-09-19",
+    "fecha_estimada_terminacion": "2025-09-20",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 4,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T19:09:32.796Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 34344,
+    "fecha_estimada_inicio": "2025-09-19",
+    "fecha_estimada_terminacion": "2025-09-20",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 4,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T19:09:32.805Z] Error en storeContratoRepository
+{
+  "message": "Cannot add or update a child row: a foreign key constraint fails (`acia`.`contratos`, CONSTRAINT `contratos_ibfk_3` FOREIGN KEY (`obligacion_id`) REFERENCES `obligaciones` (`id`) ON DELETE CASCADE)",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Contrato.create (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async storeContratoRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:197:20)\n    at async storeContratoService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:63:12)\n    at async storeContrato (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:57:22)",
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 34344,
+    "fecha_estimada_inicio": "2025-09-19",
+    "fecha_estimada_terminacion": "2025-09-20",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 4,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T19:10:36.213Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 34,
+    "fecha_estimada_inicio": "2025-12-12",
+    "fecha_estimada_terminacion": "2025-12-11",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 4,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 11,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T19:10:36.220Z] Error en storeContratoRepository
+{
+  "message": "Cannot add or update a child row: a foreign key constraint fails (`acia`.`contratos`, CONSTRAINT `contratos_ibfk_3` FOREIGN KEY (`obligacion_id`) REFERENCES `obligaciones` (`id`) ON DELETE CASCADE)",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Contrato.create (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async storeContratoRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:197:20)\n    at async storeContratoService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:63:12)\n    at async storeContrato (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:57:22)",
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 34,
+    "fecha_estimada_inicio": "2025-12-12",
+    "fecha_estimada_terminacion": "2025-12-11",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 4,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 11,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T19:13:11.986Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-25",
+    "valor_mensual": 12121,
+    "fecha_estimada_inicio": "2025-09-18",
+    "fecha_estimada_terminacion": "2025-09-25",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 2,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 11,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": false,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:13:11.995Z] Error en storeContratoRepository
+{
+  "message": "Cannot add or update a child row: a foreign key constraint fails (`acia`.`contratos`, CONSTRAINT `contratos_ibfk_3` FOREIGN KEY (`obligacion_id`) REFERENCES `obligaciones` (`id`) ON DELETE CASCADE)",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Contrato.create (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async storeContratoRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:200:20)\n    at async storeContratoService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:63:12)\n    at async storeContrato (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:57:22)",
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-25",
+    "valor_mensual": 12121,
+    "fecha_estimada_inicio": "2025-09-18",
+    "fecha_estimada_terminacion": "2025-09-25",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 2,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 11,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": false,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:19:29.717Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 54584,
+    "fecha_estimada_inicio": "2025-09-17",
+    "fecha_estimada_terminacion": "2025-09-19",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 2,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:19:29.727Z] Error en storeContratoRepository
+{
+  "message": "Cannot add or update a child row: a foreign key constraint fails (`acia`.`contratos`, CONSTRAINT `contratos_ibfk_3` FOREIGN KEY (`obligacion_id`) REFERENCES `obligaciones` (`id`) ON DELETE CASCADE)",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Contrato.create (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async storeContratoRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:203:22)\n    at async storeContratoService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:63:12)\n    at async storeContrato (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:57:22)",
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 54584,
+    "fecha_estimada_inicio": "2025-09-17",
+    "fecha_estimada_terminacion": "2025-09-19",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 2,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:22:34.637Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 54584,
+    "fecha_estimada_inicio": "2025-09-17",
+    "fecha_estimada_terminacion": "2025-09-19",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 2,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 10,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:22:34.641Z] storeContratoRepository: applied fallback obligacion_id from autorizacion
+{
+  "autorizacion_id": 10,
+  "obligacion_id": 10
+}
+
+[2025-09-18T19:25:45.193Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "312",
+    "fecha_acta_seleccion": "2025-09-18",
+    "valor_mensual": 1222222,
+    "fecha_estimada_inicio": "2025-09-18",
+    "fecha_estimada_terminacion": "2025-09-18",
+    "lugar_ejecucion": "asdadad",
+    "domicilio_contractual": "asdsadd",
+    "supervisor_id": 5,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 1,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:25:45.196Z] storeContratoRepository: applied fallback obligacion_id from autorizacion
+{
+  "autorizacion_id": 1,
+  "obligacion_id": 2
+}
+
+[2025-09-18T19:39:20.979Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'Contrato.obligacion_id' in 'field list'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.select (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:407:12)\n    at async Contrato.findAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1140:21)\n    at async Promise.all (index 1)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)\n    at async getContratos (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:17:9)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-18T19:43:23.253Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'Contrato.obligacion_id' in 'field list'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.select (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:407:12)\n    at async Contrato.findAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1140:21)\n    at async Promise.all (index 1)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)\n    at async getContratos (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:17:9)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-18T19:43:23.320Z] Error en getContratosRepository
+{
+  "message": "Unknown column 'Contrato.obligacion_id' in 'field list'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.select (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:407:12)\n    at async Contrato.findAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1140:21)\n    at async Promise.all (index 1)\n    at async Contrato.findAndCountAll (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1322:27)\n    at async getContratosRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:59:29)\n    at async getContratosService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:21:27)\n    at async getContratos (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:17:9)",
+  "whereClause": {},
+  "sortBy": "created_at",
+  "order": "ASC",
+  "page": "1",
+  "limit": "10"
+}
+
+[2025-09-18T19:44:48.983Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "312",
+    "fecha_acta_seleccion": "2025-09-18",
+    "valor_mensual": 455,
+    "fecha_estimada_inicio": "2025-09-18",
+    "fecha_estimada_terminacion": "2025-09-18",
+    "lugar_ejecucion": "asdadad",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 11,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:44:48.986Z] storeContratoRepository: applied fallback obligacion_id from autorizacion
+{
+  "autorizacion_id": 11,
+  "obligacion_id": 19
+}
+
+[2025-09-18T19:44:48.992Z] Error en storeContratoRepository
+{
+  "message": "Unknown column 'obligacion_id' in 'field list'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Contrato.create (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async storeContratoRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:230:22)\n    at async storeContratoService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:63:12)\n    at async storeContrato (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:57:22)",
+  "payload": {
+    "acta_seleccion": "312",
+    "fecha_acta_seleccion": "2025-09-18",
+    "valor_mensual": 455,
+    "fecha_estimada_inicio": "2025-09-18",
+    "fecha_estimada_terminacion": "2025-09-18",
+    "lugar_ejecucion": "asdadad",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 11,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:52:58.524Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "312",
+    "fecha_acta_seleccion": "2025-09-18",
+    "valor_mensual": 455,
+    "fecha_estimada_inicio": "2025-09-18",
+    "fecha_estimada_terminacion": "2025-09-18",
+    "lugar_ejecucion": "asdadad",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 11,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:52:58.526Z] storeContratoRepository: applied fallback obligacion_id from autorizacion
+{
+  "autorizacion_id": 11,
+  "obligacion_id": 19
+}
+
+[2025-09-18T19:52:58.528Z] Error en storeContratoRepository
+{
+  "message": "Unknown column 'obligacion_id' in 'field list'",
+  "stack": "Error\n    at Query.run (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:52:25)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async MySQLQueryInterface.insert (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n    at async model.save (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:2490:35)\n    at async Contrato.create (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\sequelize\\lib\\model.js:1362:12)\n    at async storeContratoRepository (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/repositories/contrato.repository.js:230:22)\n    at async storeContratoService (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/services/v1/contrato.service.js:63:12)\n    at async storeContrato (file:///C:/Users/Aprendiz/Documents/Proyecto-Acia/backend/src/controllers/v1/contrato/contrato.controller.js:57:22)",
+  "payload": {
+    "acta_seleccion": "312",
+    "fecha_acta_seleccion": "2025-09-18",
+    "valor_mensual": 455,
+    "fecha_estimada_inicio": "2025-09-18",
+    "fecha_estimada_terminacion": "2025-09-18",
+    "lugar_ejecucion": "asdadad",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 11,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T19:57:43.651Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 23232,
+    "fecha_estimada_inicio": "2025-09-17",
+    "fecha_estimada_terminacion": "2025-09-11",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "asdsadd",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 1,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T19:57:43.654Z] storeContratoRepository: applied fallback obligacion_id from autorizacion
+{
+  "autorizacion_id": 1,
+  "obligacion_id": 2
+}
+
+[2025-09-18T19:57:43.661Z] storeContratoRepository: retrying create without obligacion_id because column missing
+{
+  "payload": {
+    "acta_seleccion": "56457",
+    "fecha_acta_seleccion": "2025-09-11",
+    "valor_mensual": 23232,
+    "fecha_estimada_inicio": "2025-09-17",
+    "fecha_estimada_terminacion": "2025-09-11",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "asdsadd",
+    "supervisor_id": 3,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 1,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-18T20:08:20.659Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": null,
+    "fecha_acta_seleccion": "2025-09-17",
+    "valor_mensual": 54545,
+    "fecha_estimada_inicio": "2025-09-18",
+    "fecha_estimada_terminacion": "2025-09-25",
+    "lugar_ejecucion": "asdadad",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 2,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 1,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-18T20:08:20.663Z] storeContratoRepository: applied fallback obligacion_id from autorizacion
+{
+  "autorizacion_id": 1,
+  "obligacion_id": 2
+}
+
+[2025-09-18T20:08:20.670Z] storeContratoRepository: retrying create without obligacion_id because column missing
+{
+  "payload": {
+    "acta_seleccion": null,
+    "fecha_acta_seleccion": "2025-09-17",
+    "valor_mensual": 54545,
+    "fecha_estimada_inicio": "2025-09-18",
+    "fecha_estimada_terminacion": "2025-09-25",
+    "lugar_ejecucion": "asdadad",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 2,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 1,
+    "tipo_ejecucion_contrato": "Meses",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": false
+  }
+}
+
+[2025-09-19T15:04:57.921Z] Error 400: Expected property name or '}' in JSON at position 1
+{
+  "stack": "SyntaxError: Expected property name or '}' in JSON at position 1\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)",
+  "url": "/api/v1/roles/2",
+  "method": "PUT",
+  "ip": "::1",
+  "userAgent": "curl/8.14.1"
+}
+
+[2025-09-19T15:15:29.065Z] Error 400: Expected property name or '}' in JSON at position 1
+{
+  "stack": "SyntaxError: Expected property name or '}' in JSON at position 1\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)",
+  "url": "/api/v1/centros/9101/estado",
+  "method": "PATCH",
+  "ip": "::1",
+  "userAgent": "curl/8.14.1"
+}
+
+[2025-09-19T15:20:38.308Z] Invalid JSON received
+{
+  "rawBody": "{\\",
+  "url": "/api/v1/centros/9101/estado"
+}
+
+[2025-09-19T15:20:38.307Z] Error 400: Expected property name or '}' in JSON at position 1
+{
+  "stack": "SyntaxError: Expected property name or '}' in JSON at position 1\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\Aprendiz\\Documents\\Proyecto-Acia\\backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)",
+  "url": "/api/v1/centros/9101/estado",
+  "method": "PATCH",
+  "ip": "::1",
+  "userAgent": "curl/8.14.1"
+}
+
+[2025-09-22T13:03:09.916Z] storeContratoRepository payload
+{
+  "payload": {
+    "acta_seleccion": "56457457",
+    "fecha_acta_seleccion": "2025-09-15",
+    "valor_mensual": 65774747,
+    "fecha_estimada_inicio": "2025-09-25",
+    "fecha_estimada_terminacion": "2025-09-30",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 2,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 14,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+
+[2025-09-22T13:03:09.919Z] storeContratoRepository: applied fallback obligacion_id from autorizacion
+{
+  "autorizacion_id": 14,
+  "obligacion_id": 9
+}
+
+[2025-09-22T13:03:09.925Z] storeContratoRepository: retrying create without obligacion_id because column missing
+{
+  "payload": {
+    "acta_seleccion": "56457457",
+    "fecha_acta_seleccion": "2025-09-15",
+    "valor_mensual": 65774747,
+    "fecha_estimada_inicio": "2025-09-25",
+    "fecha_estimada_terminacion": "2025-09-30",
+    "lugar_ejecucion": "jtyjnhnruhn",
+    "domicilio_contractual": "tyjtyjtyj",
+    "supervisor_id": 2,
+    "coordinador_id": 5,
+    "informacion_personal_id": 1,
+    "autorizacion_id": 14,
+    "tipo_ejecucion_contrato": "Horas",
+    "tiene_poliza": true,
+    "tiene_plan_pagos": true
+  }
+}
+

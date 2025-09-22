@@ -1,0 +1,570 @@
+CREATE DATABASE IF NOT EXISTS acia;
+
+USE acia;
+
+CREATE TABLE provincias (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE ciudades (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    provincia_id INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (provincia_id) REFERENCES provincias(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE regionales  (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo VARCHAR(20) NOT NULL UNIQUE,
+    nombre VARCHAR(255) NOT NULL,
+    estado BOOLEAN NOT NULL DEFAULT TRUE COMMENT '1 = Activo, 0 = Inactivo',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE supervisores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    documento VARCHAR(25) NOT NULL UNIQUE,
+    nombres VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(50) NOT NULL,
+    sexo TINYINT,
+    correo VARCHAR(100),
+    cargo VARCHAR(500),
+    estado TINYINT(1) NOT NULL DEFAULT 1 COMMENT '1 = Activo, 0 = Inactivo',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE centros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo VARCHAR(10) NOT NULL UNIQUE,
+    nombre VARCHAR(300) NOT NULL,
+    direccion VARCHAR(255),
+    estado VARCHAR(45),
+    ciudad_id INT NOT NULL,
+    regional_id INT NOT NULL,
+    supervisores_id INT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (ciudad_id) REFERENCES ciudades(id),
+    FOREIGN KEY (regional_id) REFERENCES regionales(id),
+    FOREIGN KEY (supervisores_id) REFERENCES supervisores(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS roles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL UNIQUE,
+  descripcion VARCHAR(500),
+  estado BOOLEAN DEFAULT TRUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS permisos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL UNIQUE,
+  descripcion VARCHAR(500),
+  estado BOOLEAN DEFAULT TRUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  documento VARCHAR(20) NOT NULL UNIQUE,
+  nombres VARCHAR(50) NOT NULL,
+  apellidos VARCHAR(50) NOT NULL,
+  nombre_usuario VARCHAR(50) NOT NULL UNIQUE,
+  correo VARCHAR(100) NOT NULL UNIQUE,
+  telefono VARCHAR(15),
+  contrasena VARCHAR(255) NOT NULL,
+  reset_token VARCHAR(255) DEFAULT NULL,
+  reset_token_expires TIMESTAMP NULL DEFAULT NULL,
+  estado BOOLEAN NOT NULL DEFAULT FALSE,
+  rol_id INT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  CONSTRAINT fk_rol
+    FOREIGN KEY (rol_id) REFERENCES roles(id)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS rol_permiso (
+  rol_id INT NOT NULL,
+  permiso_id INT NOT NULL,
+  PRIMARY KEY (rol_id, permiso_id),
+  FOREIGN KEY (rol_id) REFERENCES roles(id) ON DELETE CASCADE,
+  FOREIGN KEY (permiso_id) REFERENCES permisos(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS usuario_permiso (
+  usuario_id INT NOT NULL,
+  permiso_id INT NOT NULL,
+  PRIMARY KEY (usuario_id, permiso_id),
+  FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE,
+  FOREIGN KEY (permiso_id) REFERENCES permisos(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE centro_usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    centro_id INT NOT NULL,
+    usuario_id INT NOT NULL,
+    FOREIGN KEY (centro_id) REFERENCES centros(id)
+        ON DELETE RESTRICT,   
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+        ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS cargos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL UNIQUE,
+  estado TINYINT(1) NOT NULL DEFAULT 1 COMMENT '1 = Activo, 0 = Inactivo',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS cargo_centro (
+    id TINYINT AUTO_INCREMENT PRIMARY KEY,
+    cargo_id INT NOT NULL,
+    centro_id INT NOT NULL,
+    UNIQUE KEY uk_cargo_centro_pair (cargo_id, centro_id),
+    FOREIGN KEY (cargo_id) REFERENCES cargos(id)
+        ON DELETE RESTRICT,      
+    FOREIGN KEY (centro_id) REFERENCES centros(id)
+        ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS ordenadores (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  documento VARCHAR(25) NOT NULL UNIQUE,
+  nombres VARCHAR(50) NOT NULL,
+  apellidos VARCHAR(50) NOT NULL,
+  lugar_expedicion_id INT NOT NULL,
+  lugar_domicilio_id INT NOT NULL,
+  sexo TINYINT(1) NOT NULL COMMENT 'Ej: 1=Masculino, 2=Femenino, 3=Otro',
+  correo VARCHAR(100) NOT NULL UNIQUE,
+  telefono VARCHAR(20) NULL,
+  estado TINYINT(1) NOT NULL DEFAULT 1 COMMENT '1 = Activo, 0 = Inactivo',
+  cargo_id INT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (cargo_id) REFERENCES cargos(id)
+    ON DELETE RESTRICT,
+  FOREIGN KEY (lugar_expedicion_id) REFERENCES ciudades(id)
+    ON DELETE RESTRICT,
+  FOREIGN KEY (lugar_domicilio_id) REFERENCES ciudades(id)
+    ON DELETE RESTRICT
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS resoluciones (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fecha DATE NOT NULL,
+  acta_posesion VARCHAR(50) NULL COMMENT 'Número o código del acta de posesión',
+  fecha_posesion DATE NULL,
+  fecha_ingreso DATE NOT NULL,
+  fecha_retiro DATE NULL,
+  es_encargado TINYINT(1) NOT NULL DEFAULT 0 COMMENT 'Indica si es un encargo: 1 = Sí, 0 = No',
+  centro_id INT NOT NULL,
+  ordenadores_id INT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (centro_id) REFERENCES centros(id)
+    ON DELETE RESTRICT,
+  FOREIGN KEY (ordenadores_id) REFERENCES ordenadores(id)
+    ON DELETE RESTRICT
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS coordinadores (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(250) NOT NULL,
+  descripcion VARCHAR(500) NULL,
+  centros_id INT NOT NULL COMMENT 'Llave foránea que relaciona al coordinador con su centro asignado',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (centros_id) REFERENCES centros(id) ON DELETE RESTRICT
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS dependencias (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  codigo VARCHAR(50) NOT NULL UNIQUE,
+  nombre VARCHAR(300) NOT NULL,
+  estado TINYINT(1) NOT NULL DEFAULT 1 COMMENT '1 = Activo, 0 = Inactivo',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS centro_dependencia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    centro_id INT NOT NULL,
+    dependencia_id INT NOT NULL,
+    UNIQUE KEY uk_centro_dependencia_pair (centro_id, dependencia_id),
+    FOREIGN KEY (centro_id) REFERENCES centros(id) ON DELETE CASCADE,
+    FOREIGN KEY (dependencia_id) REFERENCES dependencias(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS codigo_rubros (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  codigo VARCHAR(50) NOT NULL UNIQUE,
+  dependencia_id INT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (dependencia_id) REFERENCES dependencias(id) ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS rubros (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  descripcion TEXT NULL,
+  codigo_rubro_id INT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (codigo_rubro_id) REFERENCES codigo_rubros(id)
+    ON DELETE RESTRICT
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS fuente_recursos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL UNIQUE,
+  descripcion VARCHAR(255) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS coordinador_grupo_mixto (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  documento VARCHAR(20) NOT NULL UNIQUE,
+  nombres VARCHAR(50) NOT NULL,
+  apellidos VARCHAR(50) NOT NULL,
+  correo VARCHAR(100) NOT NULL UNIQUE,
+  telefono VARCHAR(20) NULL,
+  estado TINYINT(1) NOT NULL DEFAULT 1 COMMENT '1 = Activo, 0 = Inactivo',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS cdps (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  codigo VARCHAR(50) NOT NULL UNIQUE,
+  descripcion VARCHAR(255) NOT NULL,
+  fecha DATE NOT NULL,
+  valor DECIMAL(15, 2) NOT NULL,
+  vigencia VARCHAR(5) NOT NULL,
+  quien_expide_id INT NOT NULL,
+  fuente_recurso_id INT NOT NULL,
+  centro_id INT NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (quien_expide_id) REFERENCES coordinador_grupo_mixto(id) ON DELETE RESTRICT,
+  FOREIGN KEY (fuente_recurso_id) REFERENCES fuente_recursos(id) ON DELETE RESTRICT,
+  FOREIGN KEY (centro_id) REFERENCES centros(id) ON DELETE RESTRICT
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS cdps_rubros (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  cdps_id INT NOT NULL,
+  rubros_id INT NOT NULL,
+  valor DECIMAL(15, 2) NOT NULL,
+  fuente_recurso_id INT NOT NULL,
+  UNIQUE KEY uk_cdp_rubro_fuente (cdps_id, rubros_id, fuente_recurso_id),
+  FOREIGN KEY (cdps_id) REFERENCES cdps(id)
+    ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (rubros_id) REFERENCES rubros(id)
+    ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (fuente_recurso_id) REFERENCES fuente_recursos(id)
+    ON DELETE RESTRICT ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS tipo_contratacion (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL UNIQUE,
+  estado TINYINT(1) NOT NULL DEFAULT 1 COMMENT '1 = Activo, 0 = Inactivo',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS necesidad_contratacion (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL UNIQUE,
+  estado TINYINT(1) NOT NULL DEFAULT 1 COMMENT '1 = Activo, 0 = Inactivo',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS autorizaciones (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  numero_linea_PAA VARCHAR(500) NOT NULL,
+  numero_autorizacion VARCHAR(50) NOT NULL UNIQUE,
+  fecha DATE NOT NULL,
+  vigencia VARCHAR(5) NOT NULL,
+  tipo_contratacion_id INT NOT NULL,
+  fecha_estudios_previos DATE NULL,
+  fecha_inexistencia DATE NULL,
+  ordenador_id INT NOT NULL,
+  objeto TEXT NOT NULL,
+  cantidad_autorizados INT NOT NULL DEFAULT 1,
+  cdp_id INT NOT NULL,
+  necesidad_contratacion_id INT NOT NULL,
+  centro_id INT NOT NULL,
+  descripcion VARCHAR(500) NULL,
+  programa_acreditacion VARCHAR(100) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (tipo_contratacion_id) REFERENCES tipo_contratacion(id) ON DELETE RESTRICT,
+  FOREIGN KEY (ordenador_id) REFERENCES ordenadores(id) ON DELETE RESTRICT,
+  FOREIGN KEY (cdp_id) REFERENCES cdps(id) ON DELETE RESTRICT,
+  FOREIGN KEY (necesidad_contratacion_id) REFERENCES necesidad_contratacion(id) ON DELETE RESTRICT,
+  FOREIGN KEY (centro_id) REFERENCES centros(id) ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS obligaciones (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  numero_orden VARCHAR(100) NOT NULL,
+  nombre LONGTEXT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS autorizacion_obligacion (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  autorizacion_id INT NOT NULL,
+  obligacion_id INT NOT NULL,
+  UNIQUE KEY uk_autorizacion_obligacion (autorizacion_id, obligacion_id),
+  FOREIGN KEY (autorizacion_id) REFERENCES autorizaciones(id) ON DELETE CASCADE,
+  FOREIGN KEY (obligacion_id) REFERENCES obligaciones(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS tipo_documento (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL UNIQUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS titulo_formacion (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL UNIQUE,
+  estado TINYINT(1) NOT NULL DEFAULT 1,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS estado_formaciones (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL UNIQUE,
+  estado TINYINT(1) NOT NULL DEFAULT 1,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS nivel_formacion (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL UNIQUE,
+  estado TINYINT(1) NOT NULL DEFAULT 1,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS regimenes_ivas (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombres VARCHAR(50) NOT NULL UNIQUE,
+  estado TINYINT(1) NOT NULL DEFAULT 1,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS areas (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL UNIQUE,
+  estado TINYINT(1) NOT NULL DEFAULT 1,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS area_centro (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    area_id INT NOT NULL,
+    centro_id INT NOT NULL,
+    UNIQUE KEY uk_area_centro_pair (area_id, centro_id),
+    FOREIGN KEY (area_id) REFERENCES areas(id) ON DELETE RESTRICT,
+    FOREIGN KEY (centro_id) REFERENCES centros(id) ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS formaciones_complementarias (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  informatica_basica TINYINT(1) NOT NULL DEFAULT 0,
+  tics TINYINT(1) NOT NULL DEFAULT 0,
+  sve TINYINT(1) NOT NULL DEFAULT 0,
+  formacion_pedagogica TINYINT(1) NOT NULL DEFAULT 0,
+  formacion_competencias TINYINT(1) NOT NULL DEFAULT 0,
+  formacion_proyectos TINYINT(1) NOT NULL DEFAULT 0,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS informacion_personales (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  documento VARCHAR(20) NOT NULL UNIQUE,
+  tipo_documentos_id INT NOT NULL,
+  ciudad_expedicion_id INT NOT NULL,
+  fecha_nacimiento DATE NULL,
+  nombres VARCHAR(50) NOT NULL,
+  apellidos VARCHAR(50) NOT NULL,
+  sexo TINYINT(1) NOT NULL COMMENT 'Ej: 1=Masculino, 2=Femenino, 3=Otro',
+  direccion_domicilio VARCHAR(100) NOT NULL,
+  ciudad_domicilio_id INT NOT NULL,
+  celular_uno VARCHAR(15) NOT NULL,
+  celular_dos VARCHAR(15) NULL,
+  correo_personal VARCHAR(100) NOT NULL UNIQUE,
+  correo_institucional VARCHAR(100) NULL UNIQUE,
+  cargo_actual_id INT NULL,
+  tiempo_cargo INT NULL COMMENT 'Tiempo en el cargo en meses',
+  area_id INT NULL,
+  foto VARCHAR(255) NULL COMMENT 'Ruta o URL de la foto',
+  centro_id INT NULL,
+  formaciones_complementarias_id INT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (tipo_documentos_id) REFERENCES tipo_documento(id) ON DELETE RESTRICT,
+  FOREIGN KEY (ciudad_expedicion_id) REFERENCES ciudades(id) ON DELETE RESTRICT,
+  FOREIGN KEY (ciudad_domicilio_id) REFERENCES ciudades(id) ON DELETE RESTRICT,
+  FOREIGN KEY (cargo_actual_id) REFERENCES cargos(id) ON DELETE RESTRICT,
+  FOREIGN KEY (area_id) REFERENCES areas(id) ON DELETE RESTRICT,
+  FOREIGN KEY (centro_id) REFERENCES centros(id) ON DELETE RESTRICT,
+  FOREIGN KEY (formaciones_complementarias_id) REFERENCES formaciones_complementarias(id) ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS educacion_informales (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  tipo_formacion_id INT NOT NULL,
+  institucion VARCHAR(100) NOT NULL,
+  fecha_inicio DATE NULL,
+  fecha_terminacion DATE NULL,
+  intensidad_horaria INT NULL,
+  estado_id INT NOT NULL,
+  informacion_personal_id INT NOT NULL,
+  titulo VARCHAR(150) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (tipo_formacion_id) REFERENCES titulo_formacion(id) ON DELETE RESTRICT,
+  FOREIGN KEY (estado_id) REFERENCES estado_formaciones(id) ON DELETE RESTRICT,
+  FOREIGN KEY (informacion_personal_id) REFERENCES informacion_personales(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- MODIFICADO: Nombre pluralizado y referencia a 'estado_formaciones' actualizada.
+CREATE TABLE IF NOT EXISTS educacion_formales (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nivel_formacion_id INT NOT NULL,
+  titulo VARCHAR(100) NOT NULL,
+  institucion VARCHAR(100) NOT NULL,
+  numero_semestres INT NULL,
+  fecha_inicio DATE NULL,
+  fecha_terminacion DATE NULL,
+  estado_id INT NOT NULL,
+  informacion_personal_id INT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (nivel_formacion_id) REFERENCES nivel_formacion(id) ON DELETE RESTRICT,
+  FOREIGN KEY (estado_id) REFERENCES estado_formaciones(id) ON DELETE RESTRICT,
+  FOREIGN KEY (informacion_personal_id) REFERENCES informacion_personales(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS experiencias_laboral (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  empresa VARCHAR(100) NOT NULL,
+  cargo VARCHAR(100) NOT NULL,
+  fecha_ingreso DATE NOT NULL,
+  fecha_retiro DATE NULL,
+  experiencia_docente TINYINT(1) NOT NULL DEFAULT 0,
+  informacion_personal_id INT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (informacion_personal_id) REFERENCES informacion_personales(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS certificaciones (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  codigo_norma VARCHAR(50) NULL,
+  nombre_norma VARCHAR(255) NOT NULL,
+  institucion VARCHAR(100) NOT NULL,
+  fecha_expedicion DATE NOT NULL,
+  fecha_vigencia DATE NULL,
+  informacion_personal_id INT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (informacion_personal_id) REFERENCES informacion_personales(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- NUEVA TABLA: Catálogo para la clasificación de persona natural.
+CREATE TABLE IF NOT EXISTS clasificacion_persona_natural (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombres VARCHAR(50) NOT NULL UNIQUE,
+  estado TINYINT(1) NOT NULL DEFAULT 1,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- MODIFICADO: Renombrada y actualizada para conectarse a 'clasificacion_persona_natural'.
+CREATE TABLE IF NOT EXISTS informaciones_previas_contratos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  banco VARCHAR(100) NULL,
+  tipo_cuenta VARCHAR(30) NULL,
+  numero_cuenta VARCHAR(30) NULL,
+  regimenes_ivas_id INT NULL,
+  servicios_excluidos_iva TINYINT(1) NOT NULL DEFAULT 0,
+  eps VARCHAR(100) NULL,
+  fondo_pensiones VARCHAR(100) NULL,
+  informacion_personales_id INT NOT NULL UNIQUE,
+  clasificacion_persona_natural_id INT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (regimenes_ivas_id) REFERENCES regimenes_ivas(id) ON DELETE RESTRICT,
+  FOREIGN KEY (informacion_personales_id) REFERENCES informacion_personales(id) ON DELETE CASCADE,
+  FOREIGN KEY (clasificacion_persona_natural_id) REFERENCES clasificacion_persona_natural(id) ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Tabla contratos: colocada después de 'informacion_personales' y otras tablas referenciadas
+CREATE TABLE IF NOT EXISTS contratos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  supervisor_id INT NULL,
+  centro_id INT NULL,
+  informacion_personal_id INT NULL,
+  autorizacion_id INT NULL,
+  coordinador_id INT NOT NULL,
+  acta_seleccion VARCHAR(50) NULL,
+  fecha_acta_seleccion DATE NULL,
+  tiene_poliza TINYINT(1) NOT NULL DEFAULT 0,
+  tipo_ejecucion_contrato ENUM('Meses', 'Horas') NOT NULL,
+  valor_mensual FLOAT NULL,
+  fecha_estimada_inicio DATE NOT NULL,
+  fecha_estimada_terminacion DATE NOT NULL,
+  lugar_ejecucion VARCHAR(300) NOT NULL,
+  domicilio_contractual VARCHAR(255) NOT NULL,
+  tiene_plan_pagos TINYINT(1) NOT NULL DEFAULT 0,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (supervisor_id) REFERENCES supervisores(id) ON DELETE SET NULL,
+  FOREIGN KEY (centro_id) REFERENCES centros(id) ON DELETE SET NULL,
+  FOREIGN KEY (informacion_personal_id) REFERENCES informacion_personales(id) ON DELETE SET NULL,
+  FOREIGN KEY (autorizacion_id) REFERENCES autorizaciones(id) ON DELETE SET NULL,
+  FOREIGN KEY (coordinador_id) REFERENCES coordinadores(id) ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS registros_presupuestales (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  numero_proceso_secop VARCHAR(100) NOT NULL,
+  link_proceso_secop VARCHAR(500) NULL,
+  contratos_id INT NOT NULL UNIQUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (contratos_id) REFERENCES contratos(id) ON DELETE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
