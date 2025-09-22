@@ -1,6 +1,6 @@
 import express from 'express';
 import * as RegionalController from '../../controllers/v1/regional/regional.controller.js';
-import { getListCentrosByRegional } from '../../controllers/v1/regional/RegionalCentro.controller.js';
+import { getListCentrosByRegional } from '../../controllers/v1/regional/regionalCentro.controller.js';
 import { createRegionalValidator, updateRegionalValidator, codigoParamValidator, cambiarEstadoValidator } from '../../middlewares/validators/regionales.validator.js';
 import { verificarToken, verificarCuentaActiva, verificarRolOPermiso } from '../../middlewares/auth.middleware.js';
 import { validateRequest } from "../../middlewares/validateRequest.middleware.js";
