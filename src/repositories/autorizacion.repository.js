@@ -9,7 +9,7 @@ import CdpsRubros from "../models/cdps_rubros.model.js";
 import Rubro from "../models/rubro.model.js";
 import CodigoRubro from "../models/codigo_rubro.model.js";
 import Dependencia from "../models/dependencia.model.js";
-import Obligacion from "../models/obligaciones.model.js";
+import Obligacion from "../models/Obligaciones.model.js";
 
 /**
  * Repositorio para obtener autorizaciones con filtros, orden y paginación.
