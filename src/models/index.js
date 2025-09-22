@@ -36,7 +36,7 @@ import AreaCentro from './areaCentro.model.js';
 import Dependencia from './dependencia.model.js';
 import Autorizacion from './autorizacion.model.js';
 import Contrato from './contrato.model.js';
-import Obligacion from './obligaciones.model.js';
+import Obligacion from './Obligaciones.model.js';
 import regimenes_ivas from './regimenes_ivas.model.js';
 import formaciones_complementarias from './formaciones_complementarias.model.js';
 import clasificacion_persona_natural from './clasificacion_persona_natural.model.js';
